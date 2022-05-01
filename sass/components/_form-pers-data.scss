@@ -1,0 +1,109 @@
+.pers-data__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.pers-data__field-lable {
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $color-sec-text;
+}
+
+.pers-data__input-cont {
+    position: relative;
+    display: block;
+
+    transition: color $trans-dur $trans-time-func;
+
+    &:focus-within {
+        color: $color-accent;
+    }
+}
+
+.pers-data__input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+}
+
+.pers-data__input {
+    // width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    transition: border-color $trans-dur $trans-time-func;
+
+    &:focus {
+        border-color: $color-accent;
+    }
+
+    &--textarea {
+        height: 120px;
+        padding: 12px 16px;
+        resize: none;
+    }
+
+    &--textarea::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.pers-data__agreement-field {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 30px;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $color-sec-text;
+}
+
+.pers-data__checkbox-unchecked {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $color-main-text;
+    border-radius: 2px;
+}
+
+.pers-data__checkbox-checked {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    background-color: $color-accent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    opacity: 0;
+
+    transition: opacity $trans-dur $trans-time-func;
+}
+
+.pers-data__agreement-checkbox:checked~.pers-data__checkbox-checked {
+    opacity: 1;
+}
+
+.pers-data__agreement-link {
+    color: $color-accent;
+}

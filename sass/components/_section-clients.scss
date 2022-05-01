@@ -1,0 +1,40 @@
+.clients-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.clients-list__item {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.clients-list__link {
+    display: flex;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: border-color $trans-dur $trans-time-func,
+        color $trans-dur $trans-time-func;
+
+    &:hover,
+    &:focus {
+        border-color: $color-accent;
+        color: $color-accent;
+    }
+}
+
+.clients-list__logo {
+    display: block;
+    margin: auto;
+    fill: currentColor;
+}

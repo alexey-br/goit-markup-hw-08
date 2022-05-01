@@ -1,0 +1,17 @@
+ul,
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    list-style-type: none;
+}
+
+body {
+    font-family: Roboto, Verdana, Tahoma, sans-serif;
+    color: $color-main-text;
+}

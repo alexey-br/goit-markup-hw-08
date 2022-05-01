@@ -1,0 +1,119 @@
+.portfolio-section {
+    text-align: center;
+    padding: 94px 0;
+}
+
+.buttons-filter {
+    // display: inline-flex;
+    margin-bottom: 50px;
+}
+
+.buttons-filter__item {
+    list-style-type: none;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.buttons-filter__btn {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-main-text;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+    border: none;
+    border-radius: 4px;
+
+    transition: color $trans-dur $trans-time-func,
+        background-color $trans-dur $trans-time-func,
+        box-shadow $trans-dur $trans-time-func;
+
+    &:hover,
+    &:focus {
+        color: $color-third-text;
+        background-color: $color-accent;
+        cursor: pointer;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.projects-list {
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+.projects-list__item {
+    transition: box-shadow $trans-dur $trans-time-func;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    // &:not(:nth-child(3n+3)) {
+    //     margin-right: 30px;
+    // }
+
+    // &:not(:nth-last-child(-n+3)) {
+    //     margin-bottom: 30px;
+    // }
+}
+
+.projects-list__item:hover .portf-card-text {
+    transform: translateY(-100%);
+}
+
+.projects-list__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-list__image {
+    display: block;
+}
+
+.projects-list__description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $color-third-text;
+
+    transition: transform $trans-dur $trans-time-func;
+}
+
+.projects-list__name-cont {
+    padding: 20px 24px;
+    text-align: left;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.projects-list__title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-list__type {
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: $color-sec-text;
+}

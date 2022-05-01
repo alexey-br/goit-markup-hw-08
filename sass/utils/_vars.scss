@@ -1,0 +1,23 @@
+$color-main-text: #212121;
+$color-sec-text: #757575;
+$color-third-text: #FFF;
+$color-accent: #2196F3;
+$color-background: #2F303A;
+
+$font-roboto: Roboto, Verdana, Tahoma, sans-serif;
+$font-raleway: Raleway, sans-serif;
+
+$trans-dur: 250ms;
+$trans-time-func: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+$brk-point-mobile: 480px;
+$brk-point-mobile-: $brk-point-mobile - 1px;
+
+$brk-point-tablet: 768px;
+$brk-point-tablet-: $brk-point-tablet - 1px;
+
+$brk-point-desktop: 1200px;
+$brk-point-desktop-: $brk-point-desktop - 1px;
+
+
