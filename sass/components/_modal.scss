@@ -1,8 +1,8 @@
 .backdrop {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
-    padding: 15px;
     overflow-y: scroll;
 
     width: 100vw;
@@ -26,11 +26,16 @@
 }
 
 .backdrop__modal {
+    overflow-y: auto;
     position: absolute;
+    z-index: 4;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
+    width: calc(100% - 30px);
+    max-width: 450px;
+    max-height: calc(100vh - 30px);
     padding: 40px;
     text-align: center;
     background-color: #fff;
@@ -69,7 +74,7 @@
 .backdrop__modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: (30px / 20px);
     letter-spacing: 0.03em;
     margin-bottom: 12px;
 }

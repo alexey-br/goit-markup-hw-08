@@ -24,6 +24,13 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+    transition: fill $trans-dur $trans-time-func;
+
+    &:hover {
+        fill: $color-accent;
+    }
 
     &.is-open .menu-button__icon-cross {
         display: block;
@@ -35,6 +42,7 @@
 
 .menu-button__icon-cross {
     display: none;
+    // fill: currentColor;
 }
 
 .menu-container {
