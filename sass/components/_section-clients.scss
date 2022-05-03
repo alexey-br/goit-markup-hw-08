@@ -13,12 +13,17 @@
 .clients-list__item {
     display: flex;
     justify-content: center;
+    width: calc((100% - 60px) / 2);
     margin: 15px;
+
+    @media screen and (min-width: $brk-point-tablet) {
+        width: calc((100% - 90px) / 3);
+    }
 }
 
 .clients-list__link {
     display: flex;
-    width: 210px;
+    width: 100%;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

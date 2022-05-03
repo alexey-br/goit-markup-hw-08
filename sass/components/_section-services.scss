@@ -2,7 +2,7 @@
     padding: 47px 0 94px;
     text-align: center;
 
-    @media screen and (max-width: ($brk-point-tablet - 1px) ) {
+    @media screen and (max-width: $brk-point-desktop-) {
         display: none;
     }
 }

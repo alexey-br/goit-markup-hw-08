@@ -8,6 +8,13 @@
     }
 }
 
+.footer-contacts-container {
+    @media screen and (min-width: $brk-point-tablet) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 .footer-address {
     margin-top: 20px;
 }
@@ -34,6 +41,10 @@
 
 .social-links {
     margin-top: 60px;
+
+    @media screen and (min-width: $brk-point-tablet) {
+        margin-top: 5px;
+    }
     // margin-left: 70px;
 }
 

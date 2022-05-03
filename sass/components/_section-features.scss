@@ -3,11 +3,25 @@
 }
 
 .features-list {
-    // display: flex;
+    @media screen and (min-width: $brk-point-tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
-.features-list__item:not(:last-child) {
-    margin-bottom: 30px;
+
+.features-list__item {
+    @media screen and (max-width: $brk-point-tablet-) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $brk-point-tablet) {
+        margin: 15px;
+        width: calc((100% - 60px) / 2);
+    }
 }
 
 .features-list__icon-wrap {
