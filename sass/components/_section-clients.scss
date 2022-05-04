@@ -1,6 +1,13 @@
 .clients-section {
-    padding: 60px 0;
     text-align: center;
+
+    @media screen and (max-width: $brk-point-desktop-) {
+        padding: 60px 0;
+    }
+
+    @media screen and (min-width: $brk-point-desktop) {
+        padding: 94px 0;
+    }
 }
 
 .clients-list {
@@ -13,11 +20,18 @@
 .clients-list__item {
     display: flex;
     justify-content: center;
-    width: calc((100% - 60px) / 2);
     margin: 15px;
 
-    @media screen and (min-width: $brk-point-tablet) {
+    @media screen and (max-width: $brk-point-tablet-) {
+        width: calc((100% - 60px) / 2);
+    }
+    
+    @media screen and (min-width: $brk-point-tablet) and (max-width: $brk-point-desktop-) {
         width: calc((100% - 90px) / 3);
+    }
+
+    @media screen and (min-width: $brk-point-desktop) {
+        width: calc((100% - 180px) / 6);
     }
 }
 

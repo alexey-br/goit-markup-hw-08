@@ -34,7 +34,6 @@
 }
 
 .pers-data__input {
-    // width: 448px;
     flex-grow: 1;
     height: 40px;
     padding-left: 42px;
@@ -61,6 +60,10 @@
     &--textarea::placeholder {
         color: rgba(117, 117, 117, 0.5);
     }
+
+    @media screen and (min-width: $brk-point-desktop) {
+        width: 448px;
+    }
 }
 
 .pers-data__agreement-field {
@@ -68,11 +71,19 @@
     display: inline-block;
     margin: 10px 0 30px;
     padding-left: 24px;
-    font-size: 12px;
-    line-height: (14px / 12px);
     text-align: left;
     letter-spacing: 0.03em;
     color: $color-sec-text;
+
+    @media screen and (max-width: $brk-point-desktop-) {
+        font-size: 12px;
+        line-height: (14px / 12px);
+    }
+
+    @media screen and (min-width: $brk-point-desktop) {
+        font-size: 14px;
+        line-height: (24px / 14px);
+    }
 }
 
 .pers-data__checkbox-unchecked {

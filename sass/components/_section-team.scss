@@ -2,6 +2,10 @@
     background: #F5F4FA;
     padding: 60px 0;
     text-align: center;
+
+    @media screen and (min-width: $brk-point-desktop) {
+        padding: 94px 0;
+    }
 }
 
 .team-list {
@@ -33,7 +37,9 @@
         margin: 15px;
     }
 
-    
+    @media screen and (min-width: $brk-point-desktop) {
+        width: calc((100% - 120px) / 4);
+    }
 }
 
 .team-list__photo {

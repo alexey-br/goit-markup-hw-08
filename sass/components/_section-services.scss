@@ -8,11 +8,15 @@
 }
 
 .services-list {
-    // display: flex;
+    display: flex;
 }
 
-.services-list__item:not(:last-child) {
-    // margin-right: 30px;
+.services-list__item {
+    width: calc((100% - 90px) / 2);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .services-list__link {

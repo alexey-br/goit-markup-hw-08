@@ -1,17 +1,22 @@
 .footer {
     background-color: $color-background;
     padding: 60px 0;
-    text-align: center;
 
-    &__container {
-        // display: flex;
+    @media screen and (max-width: $brk-point-desktop-) {
+        text-align: center;
+    }
+}
+
+.footer__container {
+    @media screen and (min-width: $brk-point-desktop) {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 .footer-contacts-container {
     @media screen and (min-width: $brk-point-tablet) {
-        display: flex;
-        justify-content: space-around;
+        display: inline-flex;
     }
 }
 
@@ -40,12 +45,19 @@
 }
 
 .social-links {
-    margin-top: 60px;
-
-    @media screen and (min-width: $brk-point-tablet) {
-        margin-top: 5px;
+    @media screen and (max-width: $brk-point-tablet-) {
+        margin-top: 60px;
     }
-    // margin-left: 70px;
+    
+    @media screen and (min-width: $brk-point-tablet) and (max-width: $brk-point-desktop-) {
+        margin-top: 5px;
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: $brk-point-desktop) {
+        margin-top: 12px;
+        margin-left: 70px;
+    }
 }
 
 .social-links__slogan,

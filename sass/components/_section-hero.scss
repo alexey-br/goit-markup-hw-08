@@ -49,18 +49,19 @@
         }
     }
 
-    }
+}
 
-    
-
-    
-    
 .hero-section__slogan {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $color-third-text;
+    font-size: 26px;
+    line-height: 1.61;
+
+    @media screen and (min-width: $brk-point-desktop) {
+        font-size: 44px;
+        line-height: (60px / 44px);
+    }
 }

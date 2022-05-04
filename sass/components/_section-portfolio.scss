@@ -82,6 +82,8 @@
     }
     
     @media screen and (min-width: $brk-point-tablet) {
+        display: flex;
+        flex-direction: column;
         width: calc((100% - 60px) / 2);
         margin: 15px;
     }
@@ -126,6 +128,10 @@
     text-align: left;
     border: 1px solid #EEEEEE;
     border-top: none;
+
+    @media screen and (min-width: $brk-point-tablet) {
+        flex-grow: 1;
+    }
 }
 
 .projects-list__title {

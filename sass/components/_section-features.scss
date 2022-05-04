@@ -1,5 +1,9 @@
 .features-section {
     padding: 60px 0;
+
+    @media screen and (min-width: $brk-point-desktop) {
+        padding: 94px 0 47px;
+    }
 }
 
 .features-list {
@@ -21,6 +25,10 @@
     @media screen and (min-width: $brk-point-tablet) {
         margin: 15px;
         width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: $brk-point-desktop) {
+        width: calc((100% - 120px) / 4);
     }
 }
 
