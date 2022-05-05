@@ -4,14 +4,14 @@
     justify-content: center;
 
     margin: 0 auto;
-    max-width: 1600px;
     text-align: center;
     background-color: #C4C4C4;
     background-position: center;
     background-size: cover;
     min-height: 400px;
 
-    @media screen and (max-width: $brk-point-mobile) {
+    @media screen and (max-width: $brk-point-tablet-) {
+        max-width: $brk-point-mobile;
         background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-mobile.jpg);
         
@@ -23,7 +23,8 @@
         }
     }
     
-    @media screen and (min-width: ($brk-point-mobile + 1px)) and (max-width: $brk-point-tablet) {
+    @media screen and (min-width: $brk-point-tablet) and (max-width: $brk-point-desktop-) {
+        max-width: $brk-point-tablet;
         background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero-tablet.jpg);
     
@@ -35,7 +36,8 @@
         }
     }
 
-    @media screen and (min-width: ($brk-point-tablet + 1px) ) {
+    @media screen and (min-width: $brk-point-desktop) {
+        max-width: 1600px;
         min-height: 600px;
         background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero-desktop.jpg);

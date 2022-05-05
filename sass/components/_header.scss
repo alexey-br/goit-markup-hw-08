@@ -51,16 +51,13 @@
 
 .menu-container {
     @media  screen and (max-width: $brk-point-tablet- ) {
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
 
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 48px 40px;
-
+        
         opacity: 0;
         pointer-events: none;
         background-color: #fff;
@@ -78,11 +75,22 @@
             transform: scale(1);
         }    
     }   
+}
+
+.menu-container__wrap {
+    @media  screen and (max-width: $brk-point-tablet- ) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: $brk-point-mobile;
+        padding: 48px 40px;
+        margin: 0 auto;
+    }
+
     @media screen and (min-width: $brk-point-tablet) {
         display: flex;
         align-items: center;
     } 
-    
 }
 
 .nav-list {
@@ -170,6 +178,10 @@
             font-size: 34px;
             line-height: (40px / 34px);
             color: $color-accent;
+
+            @media screen and (max-width: 380px) {
+                font-size: 8.5vw;
+            }
         }
     }   
 
