@@ -1525,27 +1525,44 @@ img {
 
 .portfolio-section {
   text-align: center;
-  padding: 60px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding: 94px 0;
+  }
 }
 
 .buttons-filter {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 767px) {
   .buttons-filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-right: -8px;
     margin-bottom: 25px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .buttons-filter {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1628,6 +1645,12 @@ img {
             flex-direction: column;
     width: calc((100% - 60px) / 2);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list__item {
+    width: calc((100% - 90px) / 3);
   }
 }
 
